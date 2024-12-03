@@ -43,7 +43,7 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    padding-left: 5rem;
+    padding-left: 4rem;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -59,12 +59,13 @@ section {
     cursor: default;
     margin: 0;
     display: flex;
+    margin-left: -2rem;
 }
 
 .navbar a {
     font-size: 1.5rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 3rem;
     font-weight: 700;
 }
 
@@ -346,3 +347,55 @@ span {
     grid-column: 7/11;
     grid-row: 3;
 }
+
+
+@media screen and (max-width: 768px) {
+    .about-img {
+        display: none;
+    }
+
+    .about-content {
+        margin: 0 auto; /* Center the content since the image is removed */
+        text-align: center; /* Optional: Align text to the center for better aesthetics */
+    }
+
+    .about-content h2 {
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Positioned below the header */
+        right: 0;
+        background-color: var(--bg-color);
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        padding: 1rem;
+        border-bottom: 1px solid var(--snd-bg-color);
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Default Styles for Hamburger Icon */
+#menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--main-color);
+}
+

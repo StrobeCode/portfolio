@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', 'sans-serif';
+}
+
+:root {
+    --bg-color: #081130;
+    --snd-bg-color: #091338;
+    --text-color: #fff;
+     --main-color: #59B2F4; 
+    /* --main-color: #14A76C;
+    --main-color: #FF652f;
+    --main-color: #E98074;
+    --main-color: #06FDA4; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    padding-left: 5rem;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+    margin: 0;
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+}
+
+
+.navbar a:hover, 
+.navbar a.active {
+    color: var(--text-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--main-color);
+    /* text-shadow: 0 0 5px rgba(243, 243, 243, 0.3),
+                 0 0 10px rgba(255, 255, 255, 0.3); */
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img img {
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+    padding-left: 10%;
+    box-shadow: 10px 0px 0px rgba(0,0,0,.3);
+    border-radius: 50%;
+
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .3rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5 ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+}
+
+.about-img img {
+    width: 25vw;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(253, 253, 253, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.about-img:hover img {
+    transform: translateY(-10px); /* Slightly raise the image */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.education-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.edu-header {
+    grid-column: 1/11;
+    grid-row: 3/4;
+}
+
+.byu {
+    grid-column: 2/6;
+    grid-row: 4/5;
+}
+
+.byui {
+    grid-column: 7/11;
+    grid-row: 4/5;
+
+}
+
+.edu-img {
+    max-width: 100px;
+}
+
+.school {
+    font-size: 2vw;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+.school-major {
+    font-size: 1.5vw;
+    font-size: 1.5vh;
+    font-weight: 400;
+}
+
+.school-year {
+    font-size: 1vw;
+    font-size: 1vh;
+    font-weight: 200;
+    line-height: 4rem;
+}
+
+.projects {
+    background: var(--snd-bg-color);
+}
+
+.scheme-logo {
+    max-width: 30vw;
+    background-color: white;
+}
+
+.proj-img {
+    box-shadow: 0 5px 15px rgba(253, 253, 253, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    max-width: 16vw;
+    max-height: 18vh;
+    border-radius: 15px;
+}
+
+.proj-img-scheme {
+    max-width: 16vw;
+    max-height: 18vh;
+    box-shadow: 0 5px 15px rgba(253, 253, 253, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.proj-img:hover {
+    transform: translateY(-10px); /* Slightly raise the image */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+}
+
+.proj-img-scheme:hover {
+    transform: translateY(-10px); /* Slightly raise the image */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+}
+
+.proj-img-aws:hover {
+    transform: translateY(-10px); /* Slightly raise the image */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+}
+
+.scheme {
+    grid-column: 2/6;
+    grid-row: 2;
+}
+
+.ants {
+    grid-column: 7/11;
+    grid-row: 2;
+}
+
+.proj-header {
+    grid-column: 1/11;
+    grid-row: 1/2;
+    margin-top: 2%;
+}
+
+.ants-name {
+    font-size: 2vw;
+    font-size: 2vh;
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.aws {
+    margin-top: 5%;
+    grid-column: 2/6;
+    grid-row: 3;
+}
+
+.proj-img-aws {
+    max-width: 16vw;
+    max-height: 18vh;
+    box-shadow: 0 5px 15px rgba(253, 253, 253, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.dfh {
+    grid-column: 7/11;
+    grid-row: 3;
+}

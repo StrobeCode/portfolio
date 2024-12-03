@@ -348,6 +348,12 @@ span {
     grid-row: 3;
 }
 
+#menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--main-color);
+}
 
 @media screen and (max-width: 768px) {
     .about-img {
@@ -391,11 +397,4 @@ span {
     }
 }
 
-/* Default Styles for Hamburger Icon */
-#menu-icon {
-    display: none; /* Hidden by default */
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--main-color);
-}
 

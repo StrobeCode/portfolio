@@ -354,7 +354,14 @@ span {
     color: var(--main-color);
 }
 
-@media screen and (max-width: 961px) {
+.footer {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+}
+
+
+@media screen and (max-width: 1000px) {
     .about-img {
         display: none;
     }

@@ -294,19 +294,18 @@ span {
     border-radius: 15px;
 }
 
-.proj-img:hover {
-    transform: translateY(-10px); /* Slightly raise the image */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+.proj-img-aws {
+    max-width: 16vw;
+    max-height: 18vh;
+    box-shadow: 0 5px 15px rgba(253, 253, 253, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background-color: white;
+    border-radius: 15px;
 }
 
-.proj-img-scheme:hover {
-    transform: translateY(-10px); /* Slightly raise the image */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
-}
-
-.proj-img-aws:hover {
-    transform: translateY(-10px); /* Slightly raise the image */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+.proj-img:hover, .proj-img-scheme:hover, .proj-img-aws:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .scheme {
@@ -336,15 +335,6 @@ span {
     margin-top: 5%;
     grid-column: 2/6;
     grid-row: 3;
-}
-
-.proj-img-aws {
-    max-width: 16vw;
-    max-height: 18vh;
-    box-shadow: 0 5px 15px rgba(253, 253, 253, 0.6);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    background-color: white;
-    border-radius: 15px;
 }
 
 .trad-logo {

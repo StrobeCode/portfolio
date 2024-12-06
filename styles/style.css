@@ -219,6 +219,10 @@ span {
     align-items: center;
 }
 
+.education {
+    background-color: var(--snd-bg-color);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -264,9 +268,9 @@ span {
     line-height: 4rem;
 }
 
-.projects {
+/* .projects {
     background: var(--snd-bg-color);
-}
+} */
 
 .scheme-logo {
     max-width: 30vw;
@@ -343,6 +347,11 @@ span {
     border-radius: 15px;
 }
 
+.trad-logo {
+    max-width: 100px;
+    border-radius: 30%;
+}
+
 .dfh {
     grid-column: 7/11;
     grid-row: 3;
@@ -355,7 +364,7 @@ span {
     color: var(--main-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 961px) {
     .about-img {
         display: none;
     }
